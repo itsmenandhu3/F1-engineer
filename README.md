@@ -3,26 +3,21 @@ F1 Qualifying Lap Time Predictor
 Predicting Formula 1 Qualifying Lap Times Using Machine Learning
 
 This project simulates the role of a Formula 1 race engineer by building a machine learning model to predict qualifying lap times based on real-world F1 data. Using the 2024 Monaco Grand Prix qualifying session data, the model learns how driver, tyre compound, lap number, and weather conditions affect lap time performance.
-
 The goal is to enable interactive lap time prediction via a Streamlit web app where users can input factors like driver, lap, tyre, and temperature to get realistic qualifying lap time estimates in a readable minutes.seconds.milliseconds format.
 
 Features
 Real F1 Data: Utilizes FastF1 Python library to fetch official qualifying session data and weather information.
-
 Best Lap Selection: Uses each driver’s best qualifying lap for training, focusing on pole-position level performance.
-
 Machine Learning Model: Trains a Random Forest regressor to accurately predict lap times based on key features.
-
 Interactive Web App: Streamlit interface for easy input and instant prediction visualization.
-
 Real-World Validation: Predictions verified against live timing data from F1 Tempo, showing close alignment with actual qualifying times.
 
 Installation & Setup
 Clone the repository:
 
 bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/itsmenandhu3/F1-engineer
+cd F1-engineer
 Install dependencies:
 
 bash
@@ -54,17 +49,14 @@ text
 ├── le_compound.pkl         # Tyre compound label encoder
 ├── cache/                  # FastF1 cache directory for data caching
 └── README.md               # This file
+
+
 How It Works
 The script loads data for the Monaco 2024 qualifying session.
-
 Extracts each driver’s fastest lap and weather-related features.
-
 Converts categorical data into numeric labels.
-
-Trains a Random Forest model to predict lap time in milliseconds.
-
+Trains a Random Forest model to predict lap time in minutes-seconds-milliseconds.
 Saves the model and encoding tools for use in the app.
-
 The Streamlit app loads this model and lets you predict lap times by simulating race engineer input.
 
 Validation
@@ -72,15 +64,10 @@ I verified the model’s predicted lap times against live qualifying lap times f
 
 Technologies Used
 Python 3.x
-
 FastF1 for F1 telemetry and data retrieval
-
 Scikit-learn for machine learning models
-
 Streamlit for web app interface
-
 Pandas, NumPy for data manipulation
-
 Joblib for model serialization
 
 About Me
