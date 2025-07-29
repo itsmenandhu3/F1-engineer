@@ -2,8 +2,6 @@ F1 Qualifying Lap Time Predictor
 
 Predicting Formula 1 Qualifying Lap Times Using Machine Learning
 
-Project Overview
-
 This project simulates the role of a Formula 1 race engineer by building a machine learning model to predict qualifying lap times based on real-world F1 data. Using the 2024 Monaco Grand Prix qualifying session data, the model learns how driver, tyre compound, lap number, and weather conditions affect lap time performance.
 
 The goal is to enable interactive lap time prediction via a Streamlit web app where users can input factors like driver, lap, tyre, and temperature to get realistic qualifying lap time estimates in a readable minutes.seconds.milliseconds format.
