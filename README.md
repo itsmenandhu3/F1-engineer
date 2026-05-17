@@ -1,4 +1,3 @@
-Absolutely! Below is a simplified and approachable README.md for your project, with all terminal/code commands clearly shown as text (not in code blocks or with formatting that hides them). This makes it very accessible, especially for users who want to quickly copy-paste or read each setup step without confusion.
 
 # F1 Qualifying Lap Time Predictor
 
@@ -78,5 +77,3 @@ You can also suggest new features!
 
 **Enjoy exploring Formula 1 from the engineer’s side!**
 
-Replace your-username/your-repo-name with your actual GitHub info before posting.  
-You can copy-paste this as plain text or as your project README.md—users can see and copy every command without any formatting confusion.
